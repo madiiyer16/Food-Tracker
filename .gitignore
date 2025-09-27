@@ -1,4 +1,4 @@
 tools/output/
 main
 .ccls-cache
-.breakpoints
+.breakpoints*:Zone.Identifier
