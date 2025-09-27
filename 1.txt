@@ -1,0 +1,23 @@
+/usr/include/c++/11/system_error:408:37: note:   no known conversion for argument 1 from ‘LeftoverRecord’ to ‘const std::error_condition&’
+  408 |   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+  /*bool operator==(LeftoverRecord lhs, LeftoverRecord rhs) {
+    // Compare each attribute of LeftoverRecord
+    return (lhs.getDate() == rhs.getDate() &&
+            lhs.getQuantityInOunces() == rhs.getQuantityInOunces() &&
+            lhs.getMeal() == rhs.getMeal() &&
+            lhs.getFoodName() == rhs.getMeal() &&
+            lhs.getLeftoverReason() == rhs.getLeftoverReason() &&
+            lhs.getDisposalMechanism() == rhs.getDisposalMechanism() &&
+            lhs.getCost() == rhs.getCost());
+}
+  bool addRecord(LeftoverRecord record) {
+    // Check if the record already exists
+    for (auto existingRecord : records) {
+        if (existingRecord == record) {
+            return false;  // Record already exists
+        }
+    }
+
+    records.push_back(record);
+    return true;  // Record added successfully
+}*/
